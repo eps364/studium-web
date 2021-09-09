@@ -1,0 +1,31 @@
+{
+  "name": "studium-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier": "prettier --write ."
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.1"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^11.1.2",
+    "@types/react": "17.0.20",
+    "@types/styled-components": "^5.1.14",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.0",
+    "typescript": "4.4.2"
+  }
+}

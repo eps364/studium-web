@@ -1,12 +1,40 @@
 {
   "name": "studium-web-current",
+  "homepage": "https://studium.blog.br",
+  "description": "Blog Studium",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eps364/studium-web"
+  },
+  "contributors": [
+    {
+      "name": "Emerson Pereira da Silva",
+      "email": "pereiradasilva.emerson@gmail.com",
+      "url": "https://github.com/eps364"
+    },
+    {
+      "name": "Luiz Filipe Binotti",
+      "email": "filipe.binotti@gmail.com"
+    },
+    {
+      "name": "Thaynara Polettini",
+      "email": "thaynarasant.pol@gmail.com",
+      "url": "https://github.com/ThaynaraSantP"
+    },
+    {
+      "name": "Uric Bonatti Cardoso",
+      "email": "uricbonatti.eng@gmail.com",
+      "url": "https://github.com/uricbonatti"
+    }
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "next": "11.1.2",
@@ -17,6 +45,7 @@
     "@types/react": "17.0.20",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
+    "prettier": "2.4.0",
     "typescript": "4.4.2"
   }
 }

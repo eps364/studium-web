@@ -1,15 +1,12 @@
-import Document, { Head, Html, Main, NextScript } from 'next/Document'
+import Document, { DocumentContext, DocumentInitialProps } from 'next/document'
+
 export default class MyDocument extends Document {
-    render() {
-        return (
-            <Html>
-                <link rel="preconnect" href="https://fonts.gstatic.com" />
-                <Head></Head>
-                <body>
-                    <Main />
-                    <NextScript />
-                </body>
-            </Html>
-        )
+    static async getInitialProps(
+        ctx: DocumentContext
+    ): Promise<DocumentInitialProps> {
+        const initialProps: DocumentInitialProps =
+            await Document.getInitialProps(ctx)
+
+        return initialProps
     }
 }

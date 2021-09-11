@@ -1,8 +1,8 @@
-import BottomNavigation from '@material-ui/core/BottomNavigation'
-import { makeStyles } from '@material-ui/core/styles'
-import Typography from '@material-ui/core/Typography'
-import React from 'react'
-import AppLink from '../../components/AppLink'
+import BottomNavigation from '@material-ui/core/BottomNavigation';
+import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
+import React from 'react';
+import AppLink from '../../components/AppLink';
 
 const useStyles = makeStyles({
     root: {
@@ -22,7 +22,6 @@ export default function Footer(): JSX.Element {
 
                 <AppLink
                     label={process.env.NEXT_PUBLIC_NAME}
-                    color="inherit"
                     href="https://studium.blog.br"
                 />
                 {new Date().getFullYear()}

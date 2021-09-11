@@ -1,19 +1,20 @@
-import { Box } from '@material-ui/core'
-import Avatar from '@material-ui/core/Avatar'
-import Button from '@material-ui/core/Button'
-import Checkbox from '@material-ui/core/Checkbox'
-import Container from '@material-ui/core/Container'
-import FormControl from '@material-ui/core/FormControl'
-import FormControlLabel from '@material-ui/core/FormControlLabel'
-import FormGroup from '@material-ui/core/FormGroup'
-import FormLabel from '@material-ui/core/FormLabel'
-import Grid from '@material-ui/core/Grid'
-import { makeStyles } from '@material-ui/core/styles'
-import TextField from '@material-ui/core/TextField'
-import Typography from '@material-ui/core/Typography'
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined'
-import React from 'react'
-import AppLink from '../components/AppLink'
+import { Box } from '@material-ui/core';
+import Avatar from '@material-ui/core/Avatar';
+import Button from '@material-ui/core/Button';
+import Checkbox from '@material-ui/core/Checkbox';
+import Container from '@material-ui/core/Container';
+import FormControl from '@material-ui/core/FormControl';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormGroup from '@material-ui/core/FormGroup';
+import FormLabel from '@material-ui/core/FormLabel';
+import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
+import Typography from '@material-ui/core/Typography';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import React from 'react';
+import AppLink from '../components/AppLink';
+
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -123,7 +124,6 @@ export default function SignUp() {
                             <Grid item>
                                 <AppLink
                                     href="login"
-                                    variant="body2"
                                     label="Already have an account? Sign in"
                                 />
                             </Grid>
@@ -132,5 +132,5 @@ export default function SignUp() {
                 </FormControl>
             </Box>
         </Container>
-    )
+    );
 }

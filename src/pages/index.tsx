@@ -1,25 +1,28 @@
-import { Box, Container, Typography } from '@material-ui/core'
+import { Container } from '@material-ui/core'
+import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
 import { GetStaticProps } from 'next'
-import Head from 'next/head'
+import Footer from '../components/Footer'
+import ListPost from '../components/ListPost'
+import Navbar from '../components/Navbar'
+
+const useStyles = makeStyles((theme: Theme) =>
+    createStyles({
+        root: {
+            maxWidth: 345,
+        },
+    })
+)
 
 export default function Home(): JSX.Element {
+    const classes = useStyles()
     return (
-        <>
-            <Head>
-                <title>Home | material-ui.com</title>
-            </Head>
+        <Container>
+            <Navbar />
             <Container>
-                <Box>
-                    <Typography variant="h2" color="initial">
-                        🙌 Hey, welcome!
-                    </Typography>
-
-                    <Typography variant="h4" color="initial">
-                        Install the material-ui
-                    </Typography>
-                </Box>
+                <ListPost />
             </Container>
-        </>
+            <Footer />
+        </Container>
     )
 }
 

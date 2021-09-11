@@ -83,7 +83,6 @@ export default function SignIn() {
                         Sign In
                     </Button>
 
-
                     <Button
                         type="submit"
                         fullWidth
@@ -101,7 +100,7 @@ export default function SignIn() {
                             </Link>
                         </Grid>
                         <Grid item>
-                            <Link href="#" variant="body2">
+                            <Link href="signup" variant="body2">
                                 {"Don't have an account? Sign Up"}
                             </Link>
                         </Grid>

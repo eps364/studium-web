@@ -5,7 +5,12 @@ import Typography from '@material-ui/core/Typography';
 import React from 'react';
 
 const useStyles = makeStyles({
-    root: {},
+    root: {
+        position: 'fixed',
+        width: '100vw',
+        height: 50,
+        bottom: 0,
+    },
 });
 
 export default function Footer(): JSX.Element {

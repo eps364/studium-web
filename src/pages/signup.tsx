@@ -1,20 +1,19 @@
-import { Box } from '@material-ui/core';
-import Avatar from '@material-ui/core/Avatar';
-import Button from '@material-ui/core/Button';
-import Checkbox from '@material-ui/core/Checkbox';
-import Container from '@material-ui/core/Container';
-import FormControl from '@material-ui/core/FormControl';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormGroup from '@material-ui/core/FormGroup';
-import FormLabel from '@material-ui/core/FormLabel';
-import Grid from '@material-ui/core/Grid';
-import Link from '@material-ui/core/Link';
-import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
-import Typography from '@material-ui/core/Typography';
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
-import React from 'react';
-
+import { Box } from '@material-ui/core'
+import Avatar from '@material-ui/core/Avatar'
+import Button from '@material-ui/core/Button'
+import Checkbox from '@material-ui/core/Checkbox'
+import Container from '@material-ui/core/Container'
+import FormControl from '@material-ui/core/FormControl'
+import FormControlLabel from '@material-ui/core/FormControlLabel'
+import FormGroup from '@material-ui/core/FormGroup'
+import FormLabel from '@material-ui/core/FormLabel'
+import Grid from '@material-ui/core/Grid'
+import { makeStyles } from '@material-ui/core/styles'
+import TextField from '@material-ui/core/TextField'
+import Typography from '@material-ui/core/Typography'
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined'
+import React from 'react'
+import AppLink from '../components/AppLink'
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -34,10 +33,10 @@ const useStyles = makeStyles((theme) => ({
     submit: {
         margin: theme.spacing(3, 0, 2),
     },
-}));
+}))
 
 export default function SignUp() {
-    const classes = useStyles();
+    const classes = useStyles()
 
     return (
         <Container component="main" maxWidth="xs">
@@ -101,7 +100,12 @@ export default function SignUp() {
                             </Grid>
                             <Grid item xs={12}>
                                 <FormControlLabel
-                                    control={<Checkbox value="allowExtraEmails" color="primary" />}
+                                    control={
+                                        <Checkbox
+                                            value="allowExtraEmails"
+                                            color="primary"
+                                        />
+                                    }
                                     label="I want to receive inspiration, marketing promotions and updates via email."
                                 />
                             </Grid>
@@ -117,14 +121,16 @@ export default function SignUp() {
                         </Button>
                         <Grid container justifyContent="flex-end">
                             <Grid item>
-                                <Link href="login" variant="body2">
-                                    Already have an account? Sign in
-                                </Link>
+                                <AppLink
+                                    href="login"
+                                    variant="body2"
+                                    label="Already have an account? Sign in"
+                                />
                             </Grid>
                         </Grid>
                     </FormGroup>
                 </FormControl>
             </Box>
-        </Container >
-    );
+        </Container>
+    )
 }

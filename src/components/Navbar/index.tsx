@@ -33,8 +33,10 @@ export default function Navbar(): JSX.Element {
                 >
                     <MenuIcon />
                 </IconButton>
-                <Typography variant="h6" className={classes.title}>
-                    {process.env.NEXT_PUBLIC_NAME}
+                <Typography component="h3" className={classes.title}>
+                    <Button color="inherit" href="/">
+                        {process.env.NEXT_PUBLIC_NAME}
+                    </Button>
                 </Typography>
                 <Button color="inherit" href="login">
                     Login

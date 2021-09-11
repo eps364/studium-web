@@ -1,18 +1,19 @@
-import '@fontsource/roboto'
-import CssBaseline from '@material-ui/core/CssBaseline'
-import { ThemeProvider } from '@material-ui/core/styles'
-import { AppProps } from 'next/app'
-import Head from 'next/head'
-import React, { useEffect } from 'react'
-import theme from '../styles/theme'
+import '@fontsource/roboto';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { ThemeProvider } from '@material-ui/core/styles';
+import { AppProps } from 'next/app';
+import Head from 'next/head';
+import React, { useEffect } from 'react';
+import Layout from '../components/Layout';
+import theme from '../styles/theme';
 
 export default function MyApp(props: AppProps) {
-    const { Component, pageProps } = props
+    const { Component, pageProps } = props;
     useEffect(() => {
-        const jssStyles = document.querySelector('#jss-server-side')
+        const jssStyles = document.querySelector('#jss-server-side');
         if (jssStyles && jssStyles.parentNode)
-            jssStyles.parentNode.removeChild(jssStyles)
-    }, [])
+            jssStyles.parentNode.removeChild(jssStyles);
+    }, []);
 
     return (
         <>
@@ -26,8 +27,10 @@ export default function MyApp(props: AppProps) {
             <ThemeProvider theme={theme}>
                 {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
                 <CssBaseline />
-                <Component {...pageProps} />
+                <Layout>
+                    <Component {...pageProps} />
+                </Layout>
             </ThemeProvider>
         </>
-    )
+    );
 }

@@ -1,15 +1,12 @@
 import { Box } from '@material-ui/core'
 import Avatar from '@material-ui/core/Avatar'
 import Button from '@material-ui/core/Button'
-import Checkbox from '@material-ui/core/Checkbox'
 import Container from '@material-ui/core/Container'
 import FormControl from '@material-ui/core/FormControl'
-import FormControlLabel from '@material-ui/core/FormControlLabel'
 import FormLabel from '@material-ui/core/FormLabel'
 import Grid from '@material-ui/core/Grid'
 import { makeStyles } from '@material-ui/core/styles'
 import TextField from '@material-ui/core/TextField'
-import { Email, GitHub } from '@material-ui/icons'
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined'
 import React from 'react'
 import AppLink from '../components/AppLink'
@@ -44,7 +41,7 @@ export default function SignIn() {
                     <LockOutlinedIcon />
                 </Avatar>
                 <FormControl component="form">
-                    <FormLabel>Login</FormLabel>
+                    <FormLabel>Forgot</FormLabel>
                     <TextField
                         variant="outlined"
                         margin="normal"
@@ -56,31 +53,6 @@ export default function SignIn() {
                         autoComplete="email"
                         autoFocus
                     />
-                    <TextField
-                        variant="outlined"
-                        margin="normal"
-                        required
-                        fullWidth
-                        name="password"
-                        label="Password"
-                        type="password"
-                        id="password"
-                        autoComplete="current-password"
-                    />
-                    <FormControlLabel
-                        control={<Checkbox value="remember" color="primary" />}
-                        label="Remember me"
-                    />
-                    <Button
-                        type="submit"
-                        fullWidth
-                        variant="contained"
-                        color="primary"
-                        className={classes.submit}
-                    >
-                        <Email className={classes.avatar} />
-                        Sign In
-                    </Button>
 
                     <Button
                         type="submit"
@@ -89,11 +61,9 @@ export default function SignIn() {
                         color="primary"
                         className={classes.submit}
                     >
-                        <GitHub className={classes.avatar} />
-                        Login with GitHub
+                        Reset Password
                     </Button>
                     <Grid container>
-                        <AppLink href="forgot" label="Forgot password?" />
                         <AppLink
                             href="signup"
                             label="Don't have an account? Sign Up"

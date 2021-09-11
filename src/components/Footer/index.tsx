@@ -11,10 +11,10 @@ const useStyles = makeStyles({
         height: 50,
         bottom: 0,
     },
-});
+})
 
 export default function Footer(): JSX.Element {
-    const classes = useStyles();
+    const classes = useStyles()
     return (
         <BottomNavigation className={classes.root}>
             <Typography variant="body2" color="textSecondary" align="center">
@@ -28,5 +28,5 @@ export default function Footer(): JSX.Element {
                 {'.'}
             </Typography>
         </BottomNavigation>
-    );
+    )
 }

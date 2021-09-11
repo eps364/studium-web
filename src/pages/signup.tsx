@@ -15,6 +15,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import React from 'react';
 import AppLink from '../components/AppLink';
 
+
 const useStyles = makeStyles((theme) => ({
     paper: {
         marginTop: theme.spacing(8),
@@ -33,10 +34,10 @@ const useStyles = makeStyles((theme) => ({
     submit: {
         margin: theme.spacing(3, 0, 2),
     },
-}));
+}))
 
 export default function SignUp() {
-    const classes = useStyles();
+    const classes = useStyles()
 
     return (
         <Container component="main" maxWidth="xs">
